@@ -27,31 +27,33 @@ public class A1Novice {
 			
 			//nest for loop start
 			
-			for (int in = 0; in < numOfItems;) {
+			for (int in = 0; in < numOfItems; in++) {
 				
 				int numOfEach = scan.nextInt();
 				String itemName = scan.next();
 				double itemPrice = scan.nextDouble();
 				
-				in += numOfEach; 
-				
 				itemPriceTotal = itemPrice*numOfEach; 
 				
 			}//nest for loop end
-						
-					
+			
+			
+				
 		}//for loop end
+		
 		total += itemPriceTotal; 
 		
+		for (int in = 0; in < numCustomers; in++) {
+			Total[in] = total;
+		}
+			
 		
-for (int i = 0; i < numCustomers; i++) {
-	Total[i] = total;
-}
+
 		//test print
 		for (int i = 0; i < numCustomers; i++) {
 		System.out.print(custFirstName[i].charAt(0) + ". ");
 		System.out.print(custLastName[i] +": ");
-		String totalstring  = String.format("%.2f", total);
+		String totalstring  = String.format("%.2f", Total[i]);
 		System.out.println(totalstring);
 		}
 		
