@@ -8,7 +8,52 @@ public class A1Novice {
 		
 		Scanner scan = new Scanner(System.in);
 
-		// Your code follows here.
+		int numCustomers = scan.nextInt();
+		String[] custFirstName = new String[numCustomers];
+		String[] custLastName = new String[numCustomers];
+		int numOfItems = 0 ;
+		Double[] Total = new Double[numCustomers];
+		double total = 0.0;
+		double itemPriceTotal = 0.0;
+		
+		//for loop start
+		for( int i = 0; i < numCustomers; i++) {
+		
+			custFirstName[i] = scan.next();
+			custLastName[i] = scan.next();
+			numOfItems = scan.nextInt();
+			
+			
+			
+			//nest for loop start
+			
+			for (int in = 0; in < numOfItems;) {
+				
+				int numOfEach = scan.nextInt();
+				String itemName = scan.next();
+				double itemPrice = scan.nextDouble();
+				
+				in += numOfEach; 
+				
+				itemPriceTotal = itemPrice*numOfEach; 
+				
+			}//nest for loop end
+						
+					
+		}//for loop end
+		total += itemPriceTotal; 
+		
+		
+for (int i = 0; i < numCustomers; i++) {
+	Total[i] = total;
+}
+		//test print
+		for (int i = 0; i < numCustomers; i++) {
+		System.out.print(custFirstName[i].charAt(0) + ". ");
+		System.out.print(custLastName[i] +": ");
+		String totalstring  = String.format("%.2f", total);
+		System.out.println(totalstring);
+		}
 		
 	}
 }
