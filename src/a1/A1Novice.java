@@ -41,8 +41,8 @@ public static void main(String[] args) {
 		 }
 		 System.out.print(firstName.charAt(0) + ". ");
 		System.out.print(lastName +": ");
-		
 		 System.out.printf("%.2f", total);
+		 System.out.println();
 		 
 		}
 		 
