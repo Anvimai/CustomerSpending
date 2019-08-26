@@ -4,58 +4,49 @@ import java.util.Scanner;
 
 public class A1Novice {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-
-		int numCustomers = scan.nextInt();
-		String[] custFirstName = new String[numCustomers];
-		String[] custLastName = new String[numCustomers];
-		int numOfItems = 0 ;
-		Double[] Total = new Double[numCustomers];
 		double total = 0.0;
-		double itemPriceTotal = 0.0;
+		double totalEach = 0.0;
+		int numEach = 0;
+		double priceEach = 0.0;
 		
-		//for loop start
-		for( int i = 0; i < numCustomers; i++) {
 		
-			custFirstName[i] = scan.next();
-			custLastName[i] = scan.next();
-			numOfItems = scan.nextInt();
-			
-			
-			
-			//nest for loop start
-			
-			for (int in = 0; in < numOfItems; in++) {
-				
-				int numOfEach = scan.nextInt();
-				String itemName = scan.next();
-				double itemPrice = scan.nextDouble();
-				
-				itemPriceTotal = itemPrice*numOfEach; 
-				
-			}//nest for loop end
-			
-			
-				
-		}//for loop end
+		int numCust = scan.nextInt();
+		//Double[] Total = new Double[numCust];
 		
-		total += itemPriceTotal; 
 		
-		for (int in = 0; in < numCustomers; in++) {
-			Total[in] = total;
+		for (int i = 0; i<numCust; i++, total = 0) {
+			
+			
+		String firstName = scan.next();
+		String lastName = scan.next();
+		int numItems = scan.nextInt();
+		
+		 for (int in = 0; in < numItems; in++) {
+			 
+			 
+			 
+			  numEach = scan.nextInt();
+			 String nameEach = scan.next();
+			  priceEach = scan.nextDouble();
+			  
+			  totalEach = numEach*priceEach; 
+			  total += totalEach;
+			  
+			 
+			  
+			  
+		 }
+		 System.out.print(firstName.charAt(0) + ". ");
+		System.out.print(lastName +": ");
+		 System.out.println(total);
+		 
 		}
-			
+		 
 		
+		
+}//end main
 
-		//test print
-		for (int i = 0; i < numCustomers; i++) {
-		System.out.print(custFirstName[i].charAt(0) + ". ");
-		System.out.print(custLastName[i] +": ");
-		String totalstring  = String.format("%.2f", Total[i]);
-		System.out.println(totalstring);
-		}
-		
-	}
 }
