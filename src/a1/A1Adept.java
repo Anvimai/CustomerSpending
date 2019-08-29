@@ -10,7 +10,6 @@ public class A1Adept {
 		double total = 0;
 		double totalEach = 0.0;
 		int numEach = 0;
-		double priceEach = 0.0;
 		double storeTotal = 0.0;
 		double billAvg = 0.0;
 		double low = 0.0;
