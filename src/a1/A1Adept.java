@@ -153,7 +153,7 @@ public class A1Adept {
 		
 		System.out.printf("Biggest: " + fNameM + " " + lNameM + " (%.2f)", high);
 		System.out.println();
-		System.out.printf("Lowest: " + fNameL + " " + lNameL +  " (%.2f)", low);
+		System.out.printf("Smallest: " + fNameL + " " + lNameL +  " (%.2f)", low);
 		System.out.println();
 		
 		System.out.printf("Average: %.2f", billAvg);
