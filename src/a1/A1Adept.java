@@ -127,7 +127,7 @@ public class A1Adept {
 			
 			}//end lowest for loop
 		
-		for (int i = 1; i<Total.length; i++) {
+		for (int i = 0; i<Total.length; i++) {
 			
 			if(high==Total[i]) {
 				
