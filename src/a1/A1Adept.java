@@ -138,7 +138,7 @@ public class A1Adept {
 		}
 		
 		
-		for (int i = 1; i<Total.length; i++) {
+		for (int i = 0; i<Total.length; i++) {
 			
 			if(low==Total[i]) {
 				
