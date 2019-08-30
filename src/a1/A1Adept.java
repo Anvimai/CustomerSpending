@@ -174,6 +174,7 @@ public class A1Adept {
 		System.out.println();
 		
 		System.out.printf("Average: %.2f", billAvg);
+		System.out.println();
 	
 		
 		
