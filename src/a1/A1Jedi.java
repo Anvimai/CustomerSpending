@@ -46,23 +46,46 @@ public static void main(String[] args) {
 			
 			for (int in = 0; in <numItems; in++) {
 				
+				String previousNameEach = nameEach;
 				numEach = scan.nextInt();
 				nameEach = scan.next();
 				
+				
+				
 				for (int ind = 0; ind < storCount; ind++) {
+					
+					
 					
 					if(nameEach.compareTo(ItemList[ind])==0) {
 						
+						
+						
 						ItemCount[ind] += numEach;
-						NumCustBought[ind]++;
+						
+						
+						//NumCustBought[ind]++;
+						
+					
+						if((NumCustBought[ind]<=i)) {
+							
+							NumCustBought[ind]++;
+							
+						}
 						
 					}
 					
+				
+					
+					
 				}
 				
-			}
 			
+				
+			}
+	
+		
 		}
+		
 		
 //************************************************************************************************		
 		//begin print loop
