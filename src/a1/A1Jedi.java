@@ -45,7 +45,8 @@ public static void main(String[] args) {
 		String[] FirstName = new String[numCust];
 		String[] LastName = new String[numCust];
 		String NameEach = "";
-		
+		String NAMEEach = "";
+		String NAMEEACH = "";
 		
 		for (int i = 0; i < numCust; i++){
 			
@@ -78,22 +79,13 @@ public static void main(String[] args) {
 						
 						ItemCount[ind] += numEach;
 						
-					if(nameEach.compareTo(NameEach)!=0) {
+					if((nameEach.compareTo(NameEach)!=0)) {
 						
-						if((NumCustBought[ind]<=i)) {
-
-							
-
-							NumCustBought[ind]++;
-
-							
-
-						}
-
-						
-						}
+						NumCustBought[ind]++;}
 						
 					NameEach = nameEach;
+					NAMEEach = NameEach; 
+					NAMEEACH =NAMEEach;
 					
 					}
 					
@@ -106,7 +98,9 @@ public static void main(String[] args) {
 				
 			}
 			
-			
+			NameEach = "";
+			NAMEEach = ""; 
+			NAMEEACH ="";
 	
 		
 		}
