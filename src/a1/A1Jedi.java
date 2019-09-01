@@ -79,7 +79,7 @@ public static void main(String[] args) {
 						
 						ItemCount[ind] += numEach;
 						
-					if((nameEach.compareTo(NameEach)!=0)) {
+					if((nameEach.compareTo(NameEach)!=0)&&(NumCustBought[ind]<=i)) {
 						
 						NumCustBought[ind]++;}
 						
@@ -101,7 +101,7 @@ public static void main(String[] args) {
 			NameEach = "";
 			NAMEEach = ""; 
 			NAMEEACH ="";
-	
+		
 		
 		}
 		
