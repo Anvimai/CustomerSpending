@@ -1,6 +1,8 @@
 package a1;
 
-import java.util.Scanner;
+
+import java.util.Scanner; 
+
 
 public class A1Jedi {
 
@@ -11,6 +13,7 @@ public static void main(String[] args) {
 	int numItems = 0;
 	String nameEach = "";
 	int numCust = 0;
+	 
 	
 	
 	
@@ -20,6 +23,7 @@ public static void main(String[] args) {
 	String[] ItemList = new String[storCount];
 	int[] ItemCount = new int[storCount];
 	int[] NumCustBought = new int[storCount];
+	
 	
 	//*****************************************************************************
 	
@@ -37,18 +41,30 @@ public static void main(String[] args) {
 		
 		numCust = scan.nextInt();
 		
+		Double[] Total = new Double[numCust];
+		String[] FirstName = new String[numCust];
+		String[] LastName = new String[numCust];
+		String NameEach = "";
+		
+		
 		for (int i = 0; i < numCust; i++){
 			
 			String firstName = scan.next();
 			String lastName = scan.next();
+			FirstName[i] = firstName;
+			LastName[i] = lastName; 
 			
 			numItems = scan.nextInt();
 			
+			String[] ShoppingList = new String[numItems];
+			
 			for (int in = 0; in <numItems; in++) {
 				
-				String previousNameEach = nameEach;
+				
 				numEach = scan.nextInt();
+				
 				nameEach = scan.next();
+				
 				
 				
 				
@@ -62,26 +78,35 @@ public static void main(String[] args) {
 						
 						ItemCount[ind] += numEach;
 						
+					if(nameEach.compareTo(NameEach)!=0) {
 						
-						//NumCustBought[ind]++;
-						
-					
 						if((NumCustBought[ind]<=i)) {
+
 							
+
 							NumCustBought[ind]++;
+
 							
+
+						}
+
+						
 						}
 						
+					NameEach = nameEach;
+					
 					}
 					
-				
+					
 					
 					
 				}
 				
-			
+				
 				
 			}
+			
+			
 	
 		
 		}
